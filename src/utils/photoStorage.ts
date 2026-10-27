@@ -8,7 +8,7 @@ export function getDulhanPhoto(): string {
     const custom = localStorage.getItem(DULHAN_LOCAL_KEY);
     if (custom) return custom;
   }
-  return '/photos/k.jpg';
+  return '/photos/k.png';
 }
 
 export function getBudhePhoto(): string {
@@ -16,7 +16,7 @@ export function getBudhePhoto(): string {
     const custom = localStorage.getItem(BUDHE_LOCAL_KEY);
     if (custom) return custom;
   }
-  return '/photos/kk.jpg';
+  return '/photos/kk.png';
 }
 
 export function setCustomPhoto(type: 'dulhan' | 'budhe', dataUrl: string) {

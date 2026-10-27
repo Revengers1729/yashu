@@ -59,7 +59,7 @@ export const PhotoUploaderModal: React.FC<Props> = ({ isOpen, onClose, onPhotosU
               Yash & Gudiya Photo Gallery
             </h3>
             <p className="text-xs text-stone-400">
-              Upload your photos here, or drop <code className="text-rose-300">k.jpg</code> & <code className="text-rose-300">kk.jpg</code> into <code className="text-rose-300">/public/photos/</code>
+              Upload your photos here, or put <code className="text-rose-300">k.png</code> & <code className="text-rose-300">kk.png</code> in <code className="text-rose-300">/public/photos/</code>
             </p>
           </div>
         </div>
