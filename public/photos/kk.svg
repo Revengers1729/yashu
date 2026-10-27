@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sunsetBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="40%" stop-color="#451a03"/>
+      <stop offset="70%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fdba74" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ea580c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#sunsetBg)"/>
+  <circle cx="400" cy="400" r="300" fill="url(#sunGlow)"/>
+
+  <!-- Balcony / Sunset Window Frame -->
+  <path d="M 120 850 L 120 350 C 120 160, 680 160, 680 350 L 680 850" fill="none" stroke="#fcd34d" stroke-width="2.5" opacity="0.4"/>
+  <line x1="120" y1="620" x2="680" y2="620" stroke="#78350f" stroke-width="4" opacity="0.6"/>
+
+  <!-- Old Couple Holding Hands in Balcony Silhouette -->
+  <g transform="translate(400, 480)">
+    <!-- Yash (Old) -->
+    <ellipse cx="-80" cy="-70" rx="38" ry="42" fill="#e2e8f0"/>
+    <ellipse cx="-80" cy="-65" rx="34" ry="38" fill="#475569"/>
+    <path d="M -130 140 L -30 140 L -40 20 L -120 20 Z" fill="#334155"/>
+    <path d="M -125 15 L -35 15 L -20 130 L -140 130 Z" fill="#64748b" opacity="0.8"/>
+    
+    <!-- Gudiya (Old) resting head gently on Yash's shoulder -->
+    <ellipse cx="60" cy="-55" rx="36" ry="40" fill="#f1f5f9"/>
+    <ellipse cx="60" cy="-50" rx="32" ry="36" fill="#64748b"/>
+    <!-- Shawl wrapped around her -->
+    <path d="M 0 140 L 130 140 L 115 15 L 10 15 Z" fill="#9f1239"/>
+    <path d="M -5 10 C 25 -5, 80 5, 120 140 L -10 140 Z" fill="#be123c" opacity="0.85"/>
+
+    <!-- Wrinkled hands clasped together -->
+    <circle cx="0" cy="90" r="24" fill="#fed7aa"/>
+    <circle cx="12" cy="94" r="20" fill="#fdba74"/>
+
+    <!-- Two steaming cups of Chai on the railing -->
+    <rect x="-160" y="115" width="22" height="25" rx="4" fill="#f59e0b"/>
+    <path d="M -150 110 Q -155 95 -148 85" stroke="#fef3c7" stroke-width="2" fill="none" opacity="0.7"/>
+    <rect x="140" y="115" width="22" height="25" rx="4" fill="#f59e0b"/>
+    <path d="M 150 110 Q 145 95 152 85" stroke="#fef3c7" stroke-width="2" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Typography / Romantic Inscription -->
+  <text x="400" y="780" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="700" fill="#fed7aa" text-anchor="middle" letter-spacing="2">BUDHE HONE TAK · 80 SAAL AUR BHI AAGE</text>
+  <text x="400" y="825" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" fill="#fde68a" text-anchor="middle" letter-spacing="2">BALCONY KI CHAI, SAFED BAAL AUR WOHI PURANA PYAR</text>
+  <text x="400" y="880" font-family="'Sacramento', cursive" font-size="28" fill="#fdba74" text-anchor="middle">"Chahe hum dono ke daant toot jayein, mera hath hamesha tumhare hath me hoga"</text>
+</svg>
