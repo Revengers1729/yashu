@@ -33,7 +33,7 @@ function getTelegramConfig(): TelegramConfig {
     console.error('Error reading telegram config:', err);
   }
   return {
-    bot_token: process.env.TELEGRAM_BOT_TOKEN || 'xxxxx',
+    bot_token: process.env.TELEGRAM_BOT_TOKEN || '8378037937:AAFxrAIx89Oq5Gf13Ht0e_xEiAS4CXqkOTM',
     chat_id: process.env.TELEGRAM_CHAT_ID || '6630021526',
   };
 }
