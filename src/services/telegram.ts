@@ -17,7 +17,10 @@ export async function fetchTelegramConfig(): Promise<TelegramConfigState> {
   };
 }
 
-export async function updateTelegramConfig(botToken: string, chatId: string = '6630021526'): Promise<{ success: boolean; message: string }> {
+export async function updateTelegramConfig(
+  botToken: string,
+  chatId: string = '6630021526'
+): Promise<{ success: boolean; message: string }> {
   try {
     const res = await fetch('/api/telegram-config', {
       method: 'POST',
@@ -37,7 +40,16 @@ export async function sendTelegramNotification(payload: {
   eventType: string;
   message: string;
   details?: string;
-}): Promise<{ success: boolean; sent?: boolean; simulated?: boolean; message?: string; log?: TelegramActivity }> {
+}): Promise<{
+  success: boolean;
+  sent?: boolean;
+  simulated?: boolean;
+  message?: string;
+  error?: string;
+  error_code?: number;
+  note?: string;
+  log?: TelegramActivity;
+}> {
   try {
     const res = await fetch('/api/telegram-notify', {
       method: 'POST',
@@ -46,7 +58,6 @@ export async function sendTelegramNotification(payload: {
     });
     const data = await res.json();
 
-    // Cache locally in localStorage for Gudiya to view
     if (data.log) {
       saveActivityLocal(data.log);
     }
